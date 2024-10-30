@@ -1,8 +1,9 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
 }
 
 .logo {
@@ -39,4 +40,129 @@
 
 .read-the-docs {
   color: #888;
+}
+
+nav{
+  padding: 10px 32px;
+  background-color: #734060;
+}
+
+nav .Logo{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:2rem;
+  font-weight: 600;
+  color:white;
+}
+
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background-image: url('./assets/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.searchArea{
+  display:flex;
+  border-radius: 10px;
+  padding: 24px;
+  background-color: white;
+
+}
+
+.categoryList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.categoryContainer{
+  padding: 32px;
+}
+
+.categoryContainer h2{
+  color:#734060;
+  border-bottom: 3px solid #edb654;
+  display: inline-flex;
+}
+
+.categoryList a{
+  display: flex;
+  border:1px solid #73406021;
+  max-width:230px;
+  position: relative;
+  margin: 12px;
+  padding:20px;
+  border-radius: 12px;  
+}
+
+.categoryList span{
+  position: absolute;
+  top:-6px;
+  padding: 4px 8px;
+  background-color: #734060;
+  color:white;
+}
+
+.categoryList a img{
+  width:100%;
+}
+
+.searchResult{
+
+  padding: 32px;
+}
+
+.searchResult h2{
+  color:#734060;
+  border-bottom: 3px solid #edb654;
+  display: inline-flex;
+}
+.searchResult a{
+  display: flex;
+  flex-direction: column;
+  max-width: 230px;
+  border:1px solid #73406021;
+  margin: 12px;
+  color:#734060a7;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.searchList{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.searchList h3{
+  display: grid;
+}
+
+.searchList h3 strong{
+  font-weight: 700;
+  color:#734060;
+}
+
+.productDetailContainer{
+  color:#734060;
+}
+
+.detailContainer{
+  display: flex;
+  margin: 32px;
+}
+
+.productIngredients{
+  display: flex;
+}
+
+.productIngredients img{
+  width: 420px;
+  height: 420px;
+}
+
+.productIngredientsInfo{
+  padding:0 32px;
 }
